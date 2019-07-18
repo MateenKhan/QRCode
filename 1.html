@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+<script src="jquery.min.js"></script>
+
+<script type="text/javascript" src="jquery.qrcode.js"></script>
+<script type="text/javascript" src="qrcode.js"></script>
+
+
+<p>Render in table</p>
+<div id="qrcodeTable"></div>
+<p>Render in canvas</p> 
+<div id="qrcodeCanvas"></div>
+<script>
+	//jQuery('#qrcode').qrcode("this plugin is great");
+	jQuery('#qrcodeTable').qrcode({
+		render	: "table",
+		text	: "mama Hareesh !!"
+	});	
+	jQuery('#qrcodeCanvas').qrcode({
+		text	: "annam tinnava ?"
+	});	
+</script>
+
+</body>
+</html>
